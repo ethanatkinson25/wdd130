@@ -58,10 +58,12 @@ nav, p, section, article {
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
     display: block;
+    position: relative;
     width: 100%;
     height: auto;
 }
@@ -75,12 +77,14 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+    background-color: grey;
 }
 
 article {
-    position: absolute top;
+    position: absolute;
     text-align: left;
-    margin: 20px;
+    top: 330px;
+    color: black;
     border: 3px solid black;
 }
 
