@@ -1,16 +1,41 @@
+:root {
+    --primary-color: #1c3d3f;
+    --secondary-color: #8E443D;
+    --accent1: #511730;
+    --accent2: #CB9173;
+    --heading-font: "DM Serif Display", serif;
+    --body-font: "DM Serif Text", serif;
+}
+
+/* Color Pallete is:
+    #320A28
+    #511730
+    #8E443D
+    #CB9173
+    #E0D68A
+*/
+body {
+    font-family: var(--body-font);
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav a {
-    color: white;
+    color: black;
     display: block;
     padding: 20px;
+    background-color: var(--accent2);
+    border-radius: 15px;
 }
 
-h1 {
-    color: darkblue;
+h1, h2, h3 {
+    font-family: var(--heading-font);
 }
 
 main img {
@@ -23,6 +48,7 @@ main img {
 
 main{
     max-width: 800px;
+    margin-left: 30px;
 }
 
 aside{
@@ -30,7 +56,7 @@ aside{
     margin: 30px;
     border: 3px solid grey;
     padding: 50px;
-    background-color: #1c3d3f;
+    background-color: var(--accent2);
     color: white;
 }
 

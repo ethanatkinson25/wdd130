@@ -1,0 +1,68 @@
+:root {
+    --main-font: "Funnel Display", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+h1, h2 {
+    font-family: var(--main-font);
+}
+
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    max-width: 50rem;
+    background-color: #CB9173;
+    border: 2px solid grey;
+    box-shadow: 0 0 30px black;
+    border-radius: 10px;
+    margin: 4rem;
+}
+
+.questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem 2rem auto;
+    gap: 3px;
+    max-width: 45rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-rows: 4rem 4rem;
+    grid-template-columns: 1fr 1fr
+}
+
+button {
+    max-width: 20rem;
+}
+legend {
+    margin: 1px;
+    color: black;
+}
+
+label {
+    text-align: right;
+    padding-right: 5px;
+}
+
+input, select, textarea {
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+input[type="checkbox"] {
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+
+a button:hover {
+    
+}
