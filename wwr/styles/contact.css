@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #035e7b;
+    --secondary-color: #eff1c5;
+    --accent1: #002e2c;
+    --accent2: #a2a77f;
+    --heading_font: "Noto Serif", serif;
+    --body-font: "DM Serif Display", serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading_font);
+    color: var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+header img {
+    margin-left: 60px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.employees img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+}
