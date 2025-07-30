@@ -22,25 +22,36 @@
             </nav>
         </header>
         <main>
-            <h1>Contact Us!</h1>
+            <h1 class="contactsheader">Contact Us!</h1>
             <section class="companyinfo">
-                <p>Address:</p>
-                <p>Phone Numbers: </p>
-                <p>Emails:</p>
+                <div>
+                    <h2>Address:</h2>
+                    <address>1234 Road Place, Utah</address>
+                </div>
+                <div>
+                    <h2>Phone Numbers: </h2>
+                    <a href="tel:8000000000">800-000-0000</a><br>
+                    <a href="tel:8001111111">800-111-1111</a>
+                </div>
+                <div>
+                    <h2>Emails:</h2>
+                    <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
+                    <a href="mailto:support@whitewaterrafting.com">support@whitewaterrafting.com</a>
+                </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1763.5424316444955!2d-111.99537364900709!3d41.24657090610914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1soffice!5e1!3m2!1sen!2sus!4v1753748163957!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <section class="employees">
                 <figure>
                     <img src="images/contactimages/maleemployee.webp" alt="Male employee" width="200">
-                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor enim quaerat ex nobis corporis magni deleniti totam temporibus illum distinctio accusantium tempora numquam odio aut suscipit laboriosam dicta quod!</figcaption>
+                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor enim quaerat ex nobis corporis magni deleniti totam temporibus illum distinctio accusantium tempora numquam odio aut suscipit! </figcaption>
                 </figure>
                 <figure>
                     <img src="images/contactimages/femaleemployee.webp" alt="Female employee" width="200">
-                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum aperiam explicabo quas? Libero esse vel necessitatibus dolorum, accusantium explicabo doloribus aliquid consectetur, praesentium minima quaerat corporis omnis illo atque?</figcaption>
+                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum aperiam explicabo quas? Libero esse vel necessitatibus dolorum, accusantium explicabo doloribus aliquid consectetur?</figcaption>
                 </figure>
                 <figure>
                     <img src="images/contactimages/femaleemployee2.webp" alt="Female employee presenting a white board" width="200">
-                    <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, odio vel earum repellat, quod magni, harum libero consectetur tempora officia commodi asperiores expedita at delectus repudiandae! Unde, impedit ipsum. Temporibus.</figcaption>
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, odio vel earum repellat, quod magni, harum libero consectetur tempora officia commodi asperiores expedita at delectus repudiandae!</figcaption>
                 </figure>
             </section>
             <section class="formsection">
@@ -54,13 +65,20 @@
                     </fieldset>
 
                     <fieldset>
-                        <label for="purpose">Purpose of message:</label>
-                        <label for="purpose">General Inquiry</label>
-                        <input type="radio" id="purpose" value="General Inquiry">
-                        <label for="purpose">Reservation Question</label>
-                        <input type="radio" id="purpose" value="Reservation Question">
-                        <label for="purpose">Website Suggestion</label>
-                        <input type="radio" id="purpose" value="Website Suggestion">
+                        <legend>Purpose of message:</legend>
+                            <label>
+                                <input type="radio" name="purpose" value="General Inquiry"> General Inquiry
+                            </label>
+
+                            <label>
+                            <input type="radio" name="purpose" value="Reservation Question">
+                                Reservation Question
+                            </label>
+
+                            <label>
+                            <input type="radio" name="purpose" value="Website Suggestion">
+                                Website Suggestion
+                            </label>
                     </fieldset>
 
                     <fieldset>
