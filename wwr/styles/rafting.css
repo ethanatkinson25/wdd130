@@ -185,6 +185,14 @@ footer {
     color: #fff;
 }
 
+footer a {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color:#eff1c5;
+    border: 1px solid black;
+}
+
 /* Contacts page */
 
 .employees {
@@ -194,7 +202,9 @@ footer {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    border: 1px solid #002e2c;
+    border: 1px solid var(--accent2);
+    background-color: var(--accent1);
+    color: #fff;
     border-radius: 25px;
 }
 
@@ -213,10 +223,18 @@ figcaption {
     display: block;
     text-align: center;
     margin: 10px;
+    opacity: 0.7;
+    color: #fff;
+    background-color: var(--accent1);
+}
+
+.h-margin {
+    margin-bottom: 10px;
 }
 
 .formsection {
-    border: 1px solid #002e2c;
+    border: 1px solid var(--accent1);
+    background-color: var(--accent2);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 25px;
@@ -233,9 +251,43 @@ form {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: small;
+    gap: 55px;
 }
 
 iframe {
     width: 200px;
     height: auto;
 }
+
+fieldset {
+    display: grid;
+    grid-template-columns: 400px;
+    align-items: center;
+    border: 0;
+}
+
+.subscribe {
+    display: grid;
+    grid-template-columns: 400px 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+button {
+    max-width: 200px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: black;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+button:hover {
+    background-color: var(--accent1);
+    color: #fff;
+}
+
