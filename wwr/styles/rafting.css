@@ -87,7 +87,7 @@ nav a {
     text-decoration: none;
 }
 
-.hero {
+.hero, .home-hero {
     position: relative;
     margin-top: 10px;
 }
@@ -99,16 +99,19 @@ nav a {
     height: auto;
 }
 
-.hero h1 {
+.hero h1, .home-header {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+}
+
+.hero h1 {
     background-color: var(--accent1-color);
     color: #fff;
     background-color: grey;
+    opacity: 0.7;
 }
 
 article {
@@ -240,7 +243,7 @@ figcaption {
     border-radius: 25px;
 }
 
-form {
+form, .home-form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -260,7 +263,7 @@ iframe {
     height: auto;
 }
 
-fieldset {
+fieldset{
     display: grid;
     grid-template-columns: 400px;
     align-items: center;
@@ -291,3 +294,107 @@ button:hover {
     color: #fff;
 }
 
+/* Main page */
+
+.home-image img {
+    display: block;
+    position: relative;
+    width: 840px;
+    margin: 0;
+    margin-top: -200px;
+    margin-left: -23px;
+
+}
+
+.home-header {
+    background-color: var(--accent2);
+    color: var(--primary-color);
+    opacity: 0.9;
+} 
+
+
+.home-middle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    max-width: 840px;
+    padding: 40px;
+    background-color: var(--secondary-color)
+}
+
+.home-middle-section img {
+    margin: 0;
+}
+
+.home-hero p {
+    position: relative;
+    color: var(--accent1);
+    border: 0;
+}
+
+.lower-middle-text {
+    /* max-width: 500px;
+    margin-right: -400px;
+    margin-left: 300px; */
+    margin-right: -50px;
+    text-align: left;
+}
+
+.lower-middle-text img {
+    position: relative;
+    float: left;
+    margin: 2px;
+}
+
+.home-image {
+    position: relative;
+    margin-bottom: 300px;
+    color: black;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    width: 840px;
+}
+
+.home-hero p {
+    margin-top: 40px;
+}
+
+iframe {
+    height: 400px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.home-fieldset {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 400px;
+    align-items: center;
+    border: 0;
+}
+
+/*Trips page*/
+
+th, td{
+    padding: 10px;
+    background-color: var(--accent1);
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.about-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    padding-left: 100px;
+}
+
+.left-paragraph {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+}
