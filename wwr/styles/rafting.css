@@ -99,7 +99,7 @@ nav a {
     height: auto;
 }
 
-.hero h1, .home-header {
+.hero h1, .home-header{
     position: absolute;
     top: 20px;
     width: 100%;
@@ -319,7 +319,9 @@ button:hover {
     margin: 0;
     max-width: 840px;
     padding: 40px;
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    border: 1px solid black;
 }
 
 .home-middle-section img {
@@ -366,15 +368,48 @@ iframe {
     margin-right: 20px;
 }
 
-.home-fieldset {
-    margin-left: 100px;
+.form-section-home {
+    border: 1px solid var(--accent1);
+    background-color: var(--accent2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.home-info {
     display: grid;
-    grid-template-columns: 400px;
-    align-items: center;
-    border: 0;
+    grid-template-columns: 400px 400px;
+    justify-content: space-around;
+    background-color: var(--accent2);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.home-info img {
+    border-radius: 15px;
+}
+
+.info-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.center-image {
+    margin-left: 290px;
 }
 
 /*Trips page*/
+
+.trips-header {
+    background-color: var(--accent2);
+    border-radius: 15px;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 th, td{
     padding: 10px;
@@ -397,4 +432,14 @@ th, td{
     justify-content: space-around;
     text-align: left;
 
+}
+
+.trips-info {
+    background-color: var(--accent2);
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.trips-info img {
+    border-radius: 15px;
 }
